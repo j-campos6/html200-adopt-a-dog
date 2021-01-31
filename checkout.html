@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!--checkout file -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adopt a Dog checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+  <header class="header-img">
+        <div class="header-container" style="width:30%">
+          <div class="header-logo"></div>
+          <div class="header-text">
+              <p>Seattle’s premiere dog adoption agency</p>
+          </div>
+        </div>
+        <div class="checkout-container" style="width:10%">
+          <div class="checkout-logo"></div>
+          <button type="button">Checkout</button>
+        </div>
+      <!--<div class="checkout-logo"></div>
+      <button type="button">Checkout</button>-->
+  </header>
+
+
+      <nav class="upper-nav">
+                <ul>
+                    <li class="top-nav"><a href="home.html"><small>Home</small></a></li>
+                    <li class="top-nav"><a href="dogs.html"><small>Dogs</small></a></li>
+                    <li class="top-nav"><a href="blog.html"><small>Blog</small></a></li>
+                </ul>
+      </nav>
+
+
+          <h1>Checkout</h1>
+
+          <form method="GET">
+            <div class="dogCard-top">
+              <div>
+                <label>Name:
+                  <input type="text" name="applicantName">
+                </label>
+              </div>
+            </div>
+
+          <div class="dogCard-top">
+            <div>
+              <label>Email Address:
+                <input type="email" name="applicantEmail">
+              </label>
+            </div>
+          </div>
+
+          <div class="dogCard-top">
+            <div>
+              <label for="address">Street Address</label>
+              <input id="address" type="text" name="applicantAddress">
+            </div>
+          </div>
+
+          <div class="dogCard-top">
+            <div>
+              <label for="city">City</label>
+              <input id="city" type="text" name="applicantCity">
+
+
+              <label>
+                State
+                <select>
+                  <option value="">---</option>
+                  <option value="">Washington</option>
+                  <option value="">Texas</option>
+                </select>
+              </label>
+
+              <label for="Zip-Code">Zip Code</label>
+              <input id="Zip-Code" type="text" name="zipCode">
+            </div>
+          </div>
+
+          <div class="dogCard-top">
+            <div>
+              <label>
+                First time adopter?
+                  <input type="radio" name="choice-radio">
+                Yes
+              </label>
+
+              <label>
+                  <input type="radio" name="choice-radio">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="dogCard-top">
+            <div>
+              <label>
+                Pickup Location
+                <select>
+                  <option value="">---</option>
+                  <option value="">Tukwila</option>
+                  <option value="">NorthStar</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          </form>
+
+          <h2>Dogs Adopted</h2>
+          <div class="checkoutCard">
+              <img src="images/lucas-checkout.jpg" style="width: 20%; height:20%" alt="happy black dog">
+              <div>
+                  <h5>Lucas</h5>
+                  <small>Cost to Adopt: $123.45</small>
+              </div>
+          </div>
+
+          <div class="checkoutCard">
+              <img src="images/duffy-checkout.jpg" style="width: 20%; height:20%" alt="white and brown pitbull">
+              <!--<div class="dogcardRow">-->
+                  <div>
+                      <h5>Duffy</h5>
+                      <small>Cost to Adopt: $123.45</small>
+                  </div>
+          </div>
+
+          <h2>Total Adoption Cost</h2>
+          <p>$1234.56</p>
+          <button type="button">Submit</button>
+
+
+          <footer class="footer">
+                  <div style="width:30%">
+                  <div class="footer-logo"></div>
+                  <div class="footer-text">
+                      <p><small>Aborpos nisto inci tet aut que volupti beruptiberro to ex
+                        esseque invenienihil imaximu scideru ptistiusam consequunt</small></p>
+                  </div>
+                 </div>
+                  <!--footer links start-->
+                  <nav class="lower-nav">
+                        <ul>
+                            <li><a href="home.html"><small>Home</small></a></li>
+                            <li><a href="dogs.html"><small>Dogs</small></a></li>
+                            <li><a href="contact.html"><small>Contact</small></a></li>
+                        </ul>
+                  </nav>
+                  <!--footer links end-->
+                  <div class="footer-text">
+                      <p><small>© 2018 Adoptadog, LLC | Seattle, WA</small></p>
+                  </div>
+          </footer>
+
+  </body>
+</html>
