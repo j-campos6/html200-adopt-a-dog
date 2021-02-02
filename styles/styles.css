@@ -65,12 +65,14 @@ body {
 }
 
 .checkout-container button {
-    background-color: #99cc00;
+    background-color: #4CAF50;
     /**margin: .2rem 0;**/
-    padding: 0.1rem;
+    padding: 0.2rem;
     width: 70%;
     margin-top: 10%;
     align-self: center;
+    border: none;
+    color: #FFFFFF;
 }
 
 .checkoutCard {
@@ -183,11 +185,21 @@ ul li.top-nav:not(:last-child):after {
         /**align-items: center;**/
 }
 
-
-
-.dogCard h5, .dogCard p, .dogCard small, .dogcardRow small {
+.dogCard p, .dogCard small, .dogcardRow small {
     margin: .2rem 0;
     padding: 0.5rem;
+}
+
+.dogCard h5 {
+    margin: .2rem 0;
+    padding: 0.5rem;
+    color: #003366;
+}
+
+.dogCard small {
+    margin: .2rem 0;
+    padding: 0.5rem;
+    font-weight: bolder;
 }
 
 .dogCard > img {
@@ -205,11 +217,13 @@ ul li.top-nav:not(:last-child):after {
 }
 
 .dogCard button {
-    background-color: #99cc00;
+    background-color: #4CAF50;
     /**margin: .2rem 0;**/
     padding: 0.5rem;
     width: 90%;
     align-self: center;
+    border: none;
+    color: #FFFFFF;
 }
 
 .cardRow{
