@@ -7,13 +7,17 @@ body {
   position: absolute;
   right: 0px;
   left: 0px;
+  margin: 0;
 }
 
 /**header start**/
 .header-img {
-  display: flex;
-  background: url("../images/header-image.jpg");
+  display: inline-flex;
+  background: radial-gradient(red, blue);
+  background-image: url("../images/header-image.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height:50vh;
   color: #4dff4d;
   width: 100vw;
@@ -53,6 +57,7 @@ body {
   top: 2vw;
   height: auto;
   justify-content: center;
+  background-size: contain;
 }
 
 .checkout-logo {
@@ -68,9 +73,10 @@ body {
 
 .checkout-container button {
     background-color: #4CAF50;
-    /**margin: .2rem 0;**/
-    padding: 0.2rem;
-    width: 70%;
+    margin-top: 1REM;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /*width: cover;*/
     margin-top: 10%;
     align-self: center;
     border: none;
@@ -141,8 +147,9 @@ ul li.top-nav:not(:last-child):after {
     flex-grow: 1;
     justify-content: center;
     float: left;
-    width: 70vw;
-    margin: 0 1.5%;
+    width: 55vw;
+    /**margin: 0 1.5%;**/
+    padding-left: 10%
 }
 
 .dog-gallery > .dogcard:nth-child(1){
@@ -152,25 +159,33 @@ ul li.top-nav:not(:last-child):after {
 .side-blog{
   float: right;
   width: 20vw;
+  padding-right: 9REM;
 }
 
 .dogCard-top{
-    /**display: flex;**/
-    display: inline-flex;
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 55vw;
     background-color: #fff;
     margin: 1rem;
     padding: 0rem;
+
 }
 
 .text-div {
-    display: inline-block;
-    padding-left: 10%;
-    padding-right: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 1REM;
 }
 
+/**
 .dogCard-top h5, .dogCard-top p {
     margin-left: 1rem;
 }
+**/
 
 .dogCard {
     display: flex;
@@ -198,7 +213,7 @@ ul li.top-nav:not(:last-child):after {
 .sideblogCard  h5, .sideblogCard p {
   margin: .2rem 0;
   padding: 0.5rem;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   overflow-wrap: break-word;
@@ -215,6 +230,7 @@ ul li.top-nav:not(:last-child):after {
 .side-blog h2 {
   margin: .2rem 0;
   padding: 0.7rem;
+  padding-top: 1.5REM;
 }
 
 /**cellphpone**/
@@ -231,10 +247,41 @@ ul li.top-nav:not(:last-child):after {
   }
 
   .dogCard-top{
-    display: block;
-    background-color: #fff;
-    margin: 1rem;
-    padding: 0rem;
+      display: flex;
+      flex-flow: column;
+      flex: 1 0 70vw;
+      background-color: #fff;
+      margin: 1rem;
+      padding: 0rem;
+      width: 100vw;
+  }
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1REM;
+    padding-right: 1REM;
+  }
+
+  .dogCard-top img {
+    padding-left: 1REM;
+    padding-right: 1REM;
+  }
+
+  .dog-gallery{
+      display: flex;
+      flex-direction: row;
+      flex-basis: 60%;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      height: 100%;
+      flex-grow: 1;
+      justify-content: center;
+      float: left;
+      width: 55vw;
+      /**margin: 0 1.5%;**/
+      padding-left: 20%
   }
 
   .side-blog{
@@ -245,13 +292,25 @@ ul li.top-nav:not(:last-child):after {
     margin: 0 1.5%;
   }
 
+/**
   .dogCard-top h5, .dogCard-top p, .dogCard-top img {
       padding-left: 3rem;
   }
+**/
+
+  .checkout-container {
+    position: absolute;
+    right: 30vw;
+    top: 2vw;
+    height: auto;
+    justify-content: center;
+    background-size: contain;
+  }
+
 
 }
 
-/**Ipad**/
+/**Ipad start**/
 @media screen and (min-width: 768px) and (max-width:769px) {
   .dogCard {
     display: flex;
@@ -264,20 +323,34 @@ ul li.top-nav:not(:last-child):after {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
   }
 
-  .dogCard-top{
-    display: block;
-    background-color: #fff;
-    margin: 1rem;
-    padding: 0rem;
-  }
 
   .text-div {
-      display: inline-block;
-      padding-left: 0;
-      padding-right: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /**padding-left: 0;
+      padding-right: 10%;**/
+
+
+  }
+
+  .side-blog{
+    float: right;
+    width: 26vw;
+    padding-right: 2REM;
+  }
+
+  .checkout-container {
+    position: absolute;
+    right: 14vw;
+    top: 2vw;
+    height: auto;
+    justify-content: center;
+    background-size: contain;
   }
 
 }
+/**Ipad End**/
 
 .dogcardRow{
     display: flex;
@@ -349,6 +422,7 @@ ul li.top-nav:not(:last-child):after {
    align-items: center;
    justify-content: center;
    clear: both;
+   padding-top: 1REM;
 }
 
 .bottomButton{
