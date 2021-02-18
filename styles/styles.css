@@ -84,7 +84,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     /**width: 30vh;**/
     width: 50%;
-
 }
 
 /**header end*/
@@ -140,8 +139,8 @@ ul li.top-nav:not(:last-child):after {
     height: 100%;
     flex-grow: 1;
     justify-content: center;
-    /**padding-left: 10%;
-    padding-right: 10%;**/
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .dog-gallery > .dogcard:nth-child(1){
@@ -236,6 +235,12 @@ ul li.top-nav:not(:last-child):after {
 /**Dog Gallery end**/
 
 /**Bottom button**/
+.bottombuttonContainer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .bottomButton{
    background-color: #c2c2a3;
    border: none;
