@@ -13,8 +13,10 @@ body {
 .header-img {
   display: flex;
   background: url("../images/header-image.jpg");
+  background-repeat: no-repeat;
   height:50vh;
   color: #4dff4d;
+  width: 100vw;
 }
 
 .header-container{
@@ -92,7 +94,7 @@ body {
 nav.upper-nav {
     position: relative;
     height: auto;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     height: auto;
     background-color: #c2c2a3;
@@ -135,31 +137,36 @@ ul li.top-nav:not(:last-child):after {
     flex-basis: 60%;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin:auto;
     height: 100%;
     flex-grow: 1;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    float: left;
+    width: 70vw;
+    margin: 0 1.5%;
 }
 
 .dog-gallery > .dogcard:nth-child(1){
     flex-basis: 100%;
 }
 
-.dogCard-top{
-    display: flex;
-    flex-flow: row;
-    /**margin-bottom: 10px;**/
-    /**flex-wrap: wrap;**/
-    /**align-items: center;**/
-    background-color: #fff;
-    /**width: 30vh;**/
-    margin: 1rem;
-    padding: 0rem;
-    /**padding-bottom: 1rem;**/
+.side-blog{
+  float: right;
+  width: 20vw;
 }
 
+.dogCard-top{
+    /**display: flex;**/
+    display: inline-flex;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0rem;
+}
+
+.text-div {
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 .dogCard-top h5, .dogCard-top p {
     margin-left: 1rem;
@@ -168,13 +175,108 @@ ul li.top-nav:not(:last-child):after {
 .dogCard {
     display: flex;
     flex-flow: column;
-    flex: 1 0 21%;
+    flex: 1 0 29%;
     margin: 1rem;
     padding: 0rem;
     padding-bottom: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     /**width: 30vh;**/
+}
+
+.sideblogCard {
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 30%;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    /**width: 30vh;**/
+}
+
+.sideblogCard  h5, .sideblogCard p {
+  margin: .2rem 0;
+  padding: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+    /**width: 30vh;**/
+}
+
+.sideblogCard a {
+  margin: .2rem 0;
+  padding: 0.5rem;
+}
+
+.side-blog h2 {
+  margin: .2rem 0;
+  padding: 0.7rem;
+}
+
+/**cellphpone**/
+@media screen and (max-width: 576px) {
+  .dogCard {
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 39%;
+    margin: 1rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  }
+
+  .dogCard-top{
+    display: block;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0rem;
+  }
+
+  .side-blog{
+    display: none;
+    float: right;
+    width: 20vw;
+    text-overflow: ellipsis;
+    margin: 0 1.5%;
+  }
+
+  .dogCard-top h5, .dogCard-top p, .dogCard-top img {
+      padding-left: 3rem;
+  }
+
+}
+
+/**Ipad**/
+@media screen and (min-width: 768px) and (max-width:769px) {
+  .dogCard {
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 35%;
+    margin: 1rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  }
+
+  .dogCard-top{
+    display: block;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0rem;
+  }
+
+  .text-div {
+      display: inline-block;
+      padding-left: 0;
+      padding-right: 10%;
+  }
+
 }
 
 .dogcardRow{
@@ -208,9 +310,16 @@ ul li.top-nav:not(:last-child):after {
     object-fit: cover;
 }
 
-.dogcardRow > img {
+.dogCard > img {
+    align-self: center;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.sideblogCard > img {
     /**align-self: left;**/
-    width: 40%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -239,6 +348,7 @@ ul li.top-nav:not(:last-child):after {
    display: flex;
    align-items: center;
    justify-content: center;
+   clear: both;
 }
 
 .bottomButton{
@@ -253,6 +363,7 @@ ul li.top-nav:not(:last-child):after {
    font-weight: bolder;
    height: 2rem;
    align-self: center;
+   clear: both;
 }
 /**Bottom button end**/
 
