@@ -1,0 +1,29 @@
+#Testing File
+
+User research
+
+User Persona
+
+Name: Lucy
+
+Age:25
+
+Occupation: Early career professional (engineer)
+
+Other Details:
+
+Loves small dogs (owns a poodle)
+
+Lives in a small apartment in the city.
+
+#Testing
+
+**Browsers and devices**
+
+The site was tested on android (Galaxy S20), iphone (12 pro max), and PC on chrome, firefox, and safari. These are devices which Lucy and her husband own ad that users with similar backgrounds may have.
+
+Steps to ensure site quality
+
+- Utilization of REMs and percentages to ensure screen size proportion
+- Research on typical screen sizes on various devices
+- Use of debugger tools to test various screen renderings. Tweaking of sizes of various html elements was necessary to ensure site would be responsive on both android and iphone.
