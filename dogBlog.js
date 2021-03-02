@@ -1,5 +1,7 @@
 const test = document.getElementsByClassName('dog-gallery')[0];
+
 /**console.log(test);**/
+
 const formContainer = document.createElement('div');
 test.appendChild(formContainer);
 formContainer.setAttribute('class','blogBox');

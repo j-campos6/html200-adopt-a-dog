@@ -71,6 +71,14 @@ body {
   padding: 15%;
 }
 
+.checkout-price {
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 3REM;
+
+}
+
 .checkout-container button {
     background-color: #4CAF50;
     margin-top: 1REM;
